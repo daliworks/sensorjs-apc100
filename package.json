@@ -1,0 +1,19 @@
+{
+  "name": "sensorjs-apc100",
+  "version": "0.0.1",
+  "description": "The sensorjs plugin for Botem APC100 RS-485 version",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "bohemian@daliworks.net",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^2.4.2",
+    "serialport": "^4.0.7"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
