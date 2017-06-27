@@ -1,12 +1,14 @@
 'use strict';
 
+var logger = require('log4js').getLogger('Sensor');
+
 function initDrivers() {
   var apc100Sensor;
 
   try {
     apc100Sensor = require('./driver/apc100Sensor');
   } catch(e) {
-    this.Sensor.getLogger().error('Cannot load ./driver/apc100Sensor', e);
+    logger.error('Cannot load ./driver/apc100Sensor', e);
   }
 
   return {
@@ -20,7 +22,7 @@ function initNetworks() {
   try {
     rs485APC100 = require('./network/rs485-apc100');
   } catch (e) {
-    this.Sensor.getLogger().error('Cannot load ./network/rs485-apc100', e);
+    logger.error('Cannot load ./network/rs485-apc100', e);
   }
 
   return {
