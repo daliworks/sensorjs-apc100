@@ -69,8 +69,6 @@ APC100Sensor.prototype._get = function (cb) {
     time: {}
   };
 
-  logger.warn('Called _get()');
-
   result.result[self.dataType] = self.prevValue;
   result.time[self.dataType] = self.prevTime;
 
