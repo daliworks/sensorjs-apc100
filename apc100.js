@@ -188,7 +188,6 @@ APC100.prototype.startPolling = function() {
 
 APC100.prototype.stopPolling = function() {
   if (this.registeredSensors.length && this.timer) {
-    logger.error('boh: clearInterval');
     clearInterval(this.timer);
     this.timer = null;
   }
